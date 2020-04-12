@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://logophage.github.io/sitemap.xml
