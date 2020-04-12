@@ -1,0 +1,22 @@
+{% extends "hyde/templates/index.html" %}
+
+{% block content %}
+<h1>
+    Welcome!
+<h1>
+    <h4>
+    Some general index page content
+    </h4>
+       <div class="posts">
+       <ul>
+        {% for subsection in section.subsections %}
+          <li class="post-title">
+              <a href="{{ subsection | split(pat="/") | nth(n=0) }}">
+                {{ subsection | split(pat="/") | nth(n=0) }}
+              </a>
+          </li>
+        {% endfor %}
+       </ul>
+       </div>
+
+{% endblock %}
