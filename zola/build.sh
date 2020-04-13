@@ -4,6 +4,6 @@
 
 zola build && rsync -a --delete-after public/[a-y]* ../
 
-git commit -am "Adding a new page"
+git commit -am "A Static-Build commit"
 
 git push origin master
